@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  lankavitharana-frontend-build:
+    build: build-docker/
+    container_name: lankavitharana-frontend-build
+    volumes:
+      - .:/app
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    # command: yarn create react-app cms 
+    # command: yarn start
+    command: bash -c "echo '-------------' && yarn install && echo '**************' && yarn build && echo '============'"
