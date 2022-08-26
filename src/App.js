@@ -5,6 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Hello world updated</h1>
+        <p>First time trying github pages</p>
       </header>
     </div>
   );
