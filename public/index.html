@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <audio id="backMusic" src="/media/back.mp3" preload="auto" muted="muted" autoplay="true">
+    </audio>
+    <div class="container-fluid menu-container">
+      <div class="menu">
+        <h1 class="text-center">Hey Kiddo!</h1>
+      </div>
+    </div>
+    <div class="game-space row">
+      
+      <div class="settings mt-3 mb-5 col-12">
+        <div class="text-center">
+          <button class="btn btn-primary easy" onclick="setLevel(1);">Easy</button>
+          <button class="btn btn-primary medium" onclick="setLevel(2);">Medium</button>
+          <button class="btn btn-primary hard" onclick="setLevel(3);">Hard</button>
+        </div>
+      </div>
+      <div class="start mb-3 col-12">
+        <img id="start_btn" src="img/start_btn.png" />
+      </div>
+      <div class="maths-space m-auto">
+        <div class="maths-q" id="question" style="display: none;">
+          <div class="d-flex">
+            <div class="left" id="left"></div>
+            <div class="action" id="opSign"></div>
+            <div class="right" id="right"></div>
+            <div class="eq position-relative">=</div>
+            <div class="answer">
+              <input id="answer" type="text" />
+            </div>
+          </div>
+          <div class="result" id="result">
+            <img id="result-img"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
