@@ -1,0 +1,47 @@
+.footer {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  .footer-links li:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  .footer-links a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    color: #666;
+  }
+  
+  /* Set a minimum height to push content above the footer */
+  body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
