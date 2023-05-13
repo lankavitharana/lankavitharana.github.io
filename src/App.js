@@ -1,20 +1,19 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
-import Gallery from './components/gallery/gallery';
+import Base from './routes/base/base.component';
+import Page1 from './routes/page1/page1.component';
+import Page2 from './routes/page2/page2.component';
 
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Header />
       <Routes>
-        <Route exact path="/gallery" component={Gallery} />
+        <Route path='/' element={<Base/>}>
+          <Route index element={<Page1/>}/>
+          <Route path='page2' element={<Page2/>}/>
+        </Route>
       </Routes>
-      <Footer />
-    </div>
   );
 }
 
